@@ -32,7 +32,7 @@ regression coverage.
 
 The request facade closes responses and wrappers it creates. Local loading
 closes files it opens, but the caller owns a supplied stream. Neither public
-function changes the API warehouse or controls server storage routing.
+function changes the API lakehouse or controls server storage routing.
 
 ## Default offline tests
 
@@ -76,7 +76,7 @@ COLD_V3_HTTP_FIXTURE_DIR=/absolute/path/to/exported-http-fixtures \
 ```
 
 Fixture generation is a separate API operation requiring its isolated REST
-catalog and warehouse. It is not part of ordinary client testing. The optional
+catalog and lakehouse. It is not part of ordinary client testing. The optional
 [Beehive development guide](../../beehive-data-api/docs/development.md#native-iceberg-v3-fixture)
 explains that producer workflow; the client tests only need the exported files.
 
